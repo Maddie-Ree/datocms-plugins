@@ -17,6 +17,8 @@
   "datoCmsPlugin": {
     "title": "Taxonomy Tree Selector",
     "entryPoint": "./src/main.tsx",
+    "coverImage": "docs/cover.png",
+    "previewImage": "docs/taxonomy_preview.mp4",
     "permissions": [],
     "parameters": {
       "global": [
