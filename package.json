@@ -3,7 +3,7 @@
   "description": "A plugin for DatoCMS that allows you to visualize a tree selector using the taxonomy of another model.",
   "homepage": "https://github.com/Maddie-Ree/datocms-plugins",
   "private": false,
-  "version": "0.0.3",
+  "version": "0.0.4",
   "author": "Madeleine Reehorst",
   "type": "module",
   "keywords": [
