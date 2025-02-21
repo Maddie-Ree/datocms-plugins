@@ -7,15 +7,6 @@
   </head>
   <body>
     <div id="root"></div>
-
-    <!-- This script dynamically chooses the correct file -->
-    <script type="text/javascript">
-      const isDev = window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1";
-      const script = document.createElement("script");
-      script.type = "module";
-      script.src = isDev ? "/src/main.tsx" : "./main.js";
-      document.body.appendChild(script);
-    </script>
-
+    <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>

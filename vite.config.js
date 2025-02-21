@@ -9,14 +9,9 @@ export default defineConfig({
   },
   build: {
     outDir: "dist",
+    emptyOutDir: true, // Clears the dist folder before building
     rollupOptions: {
-      input: {
-        index: "index.html",  // ✅ Ensure index.html is processed
-        main: "src/main.tsx", // ✅ Ensure main.tsx is bundled
-      },
-      output: {
-        entryFileNames: "[name].js", // ✅ Generates index.js and main.js
-      },
+      input: "index.html", // ✅ Ensures index.html is included in the build
     },
   },
 });
