@@ -2,12 +2,10 @@
 
 A plugin for DatoCMS that allows you to view a single selector taxonomy as a tree hieararchy.
 
-## Beta
-NOTE: The plugin is currently in testing and will be released soon!
 
 ## Configuration
 
-Assign the plugin as a Field Addon, and select the fields that should be defined for it to be toggled. Add a read-only API to the global settings of the plugin, this is used to fetch the taxonomy.
+Add a read-only API to the global settings of the plugin, this is used to fetch the taxonomy. You need to create the taxonomy as a model where records can be orginized as a tree. It must contain a field called "name" which will be the name of the different nodes of the tree. In the model with the selector, add a single link, refrence the taxonomy model and add the plugin. 
 
 ## Development
 
