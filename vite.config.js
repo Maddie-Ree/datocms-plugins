@@ -1,18 +1,19 @@
 import { defineConfig } from "vite";
 import reactRefresh from "@vitejs/plugin-react-refresh";
 
-// https://vitejs.dev/config/
 export default defineConfig({
   plugins: [reactRefresh()],
-  base: "", // Base URL for production builds
+  base: "./", // Ensures correct relative paths in production
   server: {
-    port: 3000, // Ensure the correct port for development
+    port: 3000, 
   },
   build: {
-    outDir: "dist", // Output directory for production builds
+    outDir: "dist", 
     rollupOptions: {
-      input: "index.html", // Entry point for the plugin
+      input: "src/main.tsx", // Ensure main.tsx is bundled correctly
+      output: {
+        entryFileNames: "main.js", // Ensures main.tsx compiles to main.js
+      },
     },
   },
 });
-
